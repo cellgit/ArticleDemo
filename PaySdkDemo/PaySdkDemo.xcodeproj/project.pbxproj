@@ -16,11 +16,11 @@
 		84D82CC82CAA451300E273F3 /* PaySdkDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D82CC72CAA451300E273F3 /* PaySdkDemoTests.swift */; };
 		84D82CD22CAA451300E273F3 /* PaySdkDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D82CD12CAA451300E273F3 /* PaySdkDemoUITests.swift */; };
 		84D82CD42CAA451300E273F3 /* PaySdkDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D82CD32CAA451300E273F3 /* PaySdkDemoUITestsLaunchTests.swift */; };
-		84D82CE72CAA455E00E273F3 /* WechatOpenSDK-XCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D82CE32CAA455E00E273F3 /* WechatOpenSDK-XCFramework.xcframework */; };
 		84D82CEB2CAA4BB700E273F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D82CEA2CAA4BB700E273F3 /* Security.framework */; };
 		84D82CED2CAA4BBB00E273F3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D82CEC2CAA4BBB00E273F3 /* WebKit.framework */; };
 		84D82CEF2CAA4BC100E273F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D82CEE2CAA4BC100E273F3 /* CoreGraphics.framework */; };
 		84D82CF32CAA52D700E273F3 /* SdkAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D82CF22CAA52D700E273F3 /* SdkAppDelegate.swift */; };
+		FA7E2E0BD3DF9B641F88632D /* Pods_PaySdkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC8A8A5817844F6E00D7B58 /* Pods_PaySdkDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65136E65E15199F1E201200C /* Pods-PaySdkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySdkDemo.debug.xcconfig"; path = "Target Support Files/Pods-PaySdkDemo/Pods-PaySdkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		84D82CAD2CAA451200E273F3 /* PaySdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaySdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D82CB02CAA451200E273F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D82CB22CAA451200E273F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +61,8 @@
 		84D82CEC2CAA4BBB00E273F3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		84D82CEE2CAA4BC100E273F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		84D82CF22CAA52D700E273F3 /* SdkAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdkAppDelegate.swift; sourceTree = "<group>"; };
+		96D020DA493CFAA9DDCFD4DA /* Pods-PaySdkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySdkDemo.release.xcconfig"; path = "Target Support Files/Pods-PaySdkDemo/Pods-PaySdkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FBC8A8A5817844F6E00D7B58 /* Pods_PaySdkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaySdkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +72,8 @@
 			files = (
 				84D82CEF2CAA4BC100E273F3 /* CoreGraphics.framework in Frameworks */,
 				84D82CEB2CAA4BB700E273F3 /* Security.framework in Frameworks */,
-				84D82CE72CAA455E00E273F3 /* WechatOpenSDK-XCFramework.xcframework in Frameworks */,
 				84D82CED2CAA4BBB00E273F3 /* WebKit.framework in Frameworks */,
+				FA7E2E0BD3DF9B641F88632D /* Pods_PaySdkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CEA8AA27D04194F36883600 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65136E65E15199F1E201200C /* Pods-PaySdkDemo.debug.xcconfig */,
+				96D020DA493CFAA9DDCFD4DA /* Pods-PaySdkDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84D82CA42CAA451200E273F3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +111,7 @@
 				84D82CD02CAA451300E273F3 /* PaySdkDemoUITests */,
 				84D82CAE2CAA451200E273F3 /* Products */,
 				84D82CE92CAA4BB700E273F3 /* Frameworks */,
+				7CEA8AA27D04194F36883600 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +181,7 @@
 				84D82CEE2CAA4BC100E273F3 /* CoreGraphics.framework */,
 				84D82CEC2CAA4BBB00E273F3 /* WebKit.framework */,
 				84D82CEA2CAA4BB700E273F3 /* Security.framework */,
+				FBC8A8A5817844F6E00D7B58 /* Pods_PaySdkDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D82CD72CAA451300E273F3 /* Build configuration list for PBXNativeTarget "PaySdkDemo" */;
 			buildPhases = (
+				0B79DF1305536C87C1590742 /* [CP] Check Pods Manifest.lock */,
 				84D82CA92CAA451200E273F3 /* Sources */,
 				84D82CAA2CAA451200E273F3 /* Frameworks */,
 				84D82CAB2CAA451200E273F3 /* Resources */,
@@ -305,6 +320,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B79DF1305536C87C1590742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaySdkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84D82CA92CAA451200E273F3 /* Sources */ = {
@@ -491,6 +531,7 @@
 		};
 		84D82CD82CAA451300E273F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65136E65E15199F1E201200C /* Pods-PaySdkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -520,6 +561,7 @@
 		};
 		84D82CD92CAA451300E273F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D020DA493CFAA9DDCFD4DA /* Pods-PaySdkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -8,13 +8,15 @@
 import Foundation
 
 
+
 public class SdkAppDelegate: NSObject, WXApiDelegate {
     public static let shared = SdkAppDelegate()
     
     private override init() {super.init()}
     
-    public func registerWXApi(appid: String, universalLink: String) {
-        WXApi.registerApp(appid, universalLink: universalLink)
+    public func registerWXApi(appid: String, universalLink: String = "") {
+//        WXApi.registerApp(appid, universalLink: universalLink)
+        WXApi.registerApp("wxaxxxxxxxxxx")
     }
     
     func testLog() {

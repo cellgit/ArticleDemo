@@ -1,0 +1,6 @@
+framework module Pods_PaySdkDemo {
+  umbrella header "Pods-PaySdkDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

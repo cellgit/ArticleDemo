@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    let urlString = "weixin://wap/pay?prepayid%3Dwx271403063533559fa5bbaaefeed3600001&package=1276924084&noncestr=1727416986&sign=ea4c9c412c8ccebfd9ddf520bc3eedb7"
+    let urlString = "weixin://wap/pay?prepayid=wx301545117177339caa68e6e210b69b0000&package=502633258&noncestr=1727682311&sign=9197d5172fa7f126c8816aec1549438f"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +37,9 @@ class ViewController: UIViewController {
     // 按钮点击事件的处理方法
     @objc func buttonClicked() {
         debugPrint("按钮被点击了")
-        if let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) {
+        if let url = URL(string: urlString) { //, UIApplication.shared.canOpenURL(url)
             UIApplication.shared.open(url) { isOpen in
-                
+                debugPrint("isOpen ==== \(isOpen)")
             }
         }
         else {

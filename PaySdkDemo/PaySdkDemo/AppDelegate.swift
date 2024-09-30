@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        SdkAppDelegate.shared.registerWXApi(appid: "wxaxxxxxxxxxx", universalLink: "")
-        
+//        SdkAppDelegate.shared.registerWXApi(appid: "wxaxxxxxxxxxx", universalLink: "")
+        WXApi.registerApp("wxaxxxxxxxxxx")
         return true
     }
 
@@ -41,6 +41,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
     // MARK: - 处理通过 URL 启动应用的情况 (iOS 9.0 以下)
     func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
         return WXApi.handleOpen(url, delegate: self)
+    }
+    
+    func onResp(_ resp: BaseResp) {
+        
+        debugPrint("resp ====== \(resp)")
+        
+        if let authResp = resp as? SendAuthResp {
+            // 登录回调处理
+            if authResp.errCode == 0 {
+                // 用户同意授权, 可以根据 authResp.code 获取 access token 等
+                print("授权成功，授权码为：\(authResp.code ?? "")")
+            } else {
+                print("授权失败，错误码：\(authResp.errCode)")
+            }
+        } else if let payResp = resp as? PayResp {
+            // 微信支付回调处理
+            if payResp.errCode == 0 {
+                print("支付成功")
+            } else {
+                print("支付失败，错误码：\(payResp.errCode)")
+            }
+        }
+        
+        
     }
 
 }
