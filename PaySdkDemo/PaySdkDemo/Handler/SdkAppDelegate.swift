@@ -18,7 +18,7 @@ public class SdkAppDelegate: NSObject, WXApiDelegate {
     }
     
     func testLog() {
-        if let url = URL(string: "wx15de3130df5xxxxxx://") {
+        if let url = URL(string: "wxaxxxxxxxxxx://") {
             UIApplication.shared.canOpenURL(url)
         }
     }

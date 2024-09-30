@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        SdkAppDelegate.shared.registerWXApi(appid: "wx15de3130df5xxxxxx", universalLink: "")
+        SdkAppDelegate.shared.registerWXApi(appid: "wxaxxxxxxxxxx", universalLink: "")
         
         return true
     }
@@ -38,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         return WXApi.handleOpen(url, delegate: self)
     }
 
+    // MARK: - 处理通过 URL 启动应用的情况 (iOS 9.0 以下)
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        return WXApi.handleOpen(url, delegate: self)
+    }
 
 }
 
